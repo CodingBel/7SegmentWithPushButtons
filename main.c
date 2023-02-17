@@ -22,21 +22,21 @@ void main (void)
 	
 	while (1)
 	{
-		if (Up == 1)
+		if (Up)
 		{
 			DebounceDelay(); 
 			
-			Count += 1;
+			Count ++;
 			
 			if (Count == 10)
 				Count = 0;  
 		}
 		
-		if (Down == 1)
+		if (Down)
 		{
 			DebounceDelay();
 			
-			Count -= 1; 
+			Count --; 
 			
 			if (Count < 0)
 			Count = 0; 
